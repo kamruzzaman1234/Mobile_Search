@@ -10,6 +10,7 @@
 </head>
 <body>
     <section class="container mx-auto px-14 py-5">
+        <h2 class="text-center text-4xl font-bold mb-4">Search Your Favorite Phone</h2>
         <!-- Input and Search Button -->
         <div class="flex justify-center items-center flex-row">
             <input type="text" placeholder="search your phone" id="input_value"
@@ -31,7 +32,25 @@
 
         <!-- Show All Area -->
         <div class="flex justify-center items-center hidden" id="show_all_phone">
-            <button class="btn bg-success text-white">Show All</button>
+            <button class="btn bg-success text-white" onclick="showAllPhone()">Show All</button>
+        </div>
+        <!-- Modal Container -->
+        <div class="modal_contain">
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <div id="show_modal_container">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
         </div>
 
          <!-- Script Area -->
