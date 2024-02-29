@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Mobile</title>
+    <!-- Daisy Ul and Tailwind css -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="container mx-auto px-14 py-5">
+        <!-- Input and Search Button -->
+        <div class="flex justify-center items-center flex-row">
+            <input type="text" placeholder="search your phone" id="input_value"
+            class="input input-bordered input-success w-full max-w-xs" />
+            <button class="btn bg-success text-white font-bold" onclick="handleSearch()">
+            Search</button>
+           
+        </div>
+        <!-- Loading Area -->
+        <div class="flex justify-center items-center my-8 hidden" id="loading">
+            <span class="loading loading-dots loading-lg"></span>
+        </div>
+        <!-- Card Area -->
+        <div class="my-10 ">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4" id="main_card_container">
+                
+            </div>
+        </div>
+
+        <!-- Show All Area -->
+        <div class="flex justify-center items-center hidden" id="show_all_phone">
+            <button class="btn bg-success text-white">Show All</button>
+        </div>
+
+         <!-- Script Area -->
+         <script src="js/script.js"></script>
+    </section>
+</body>
+</html>
